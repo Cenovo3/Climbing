@@ -1,0 +1,123 @@
+/* ------------------------------
+   Body and General Styles
+--------------------------------*/
+body {
+    background-color: #f4f4f4; /* Light neutral background */
+    font-family: "Trebuchet MS", Arial, sans-serif; /* Clean, readable font */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   Page Header
+--------------------------------*/
+.page-header {
+    background-color: #2e8b57; /* Dark green */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+/* ------------------------------
+   Section Titles and Text
+--------------------------------*/
+.section-title {
+    color: #556b2f; /* Olive green */
+    font-size: 28px;
+    margin: 20px 0 10px 0;
+}
+
+.section-text {
+    color: #333;
+    margin: 10px 20px;
+}
+
+/* ------------------------------
+   Lists
+--------------------------------*/
+.list {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ------------------------------
+   Images
+--------------------------------*/
+.climbing-image {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #2e8b57; /* Green border to match climbing theme */
+}
+
+/* ------------------------------
+   Unique Sections via ID
+--------------------------------*/
+#about-climbing {
+    background-color: #e6ffe6; /* Light green background for About */
+    padding: 15px;
+    border-left: 5px solid #2e8b57;
+}
+
+#benefits {
+    background-color: #fff4e6; /* Light beige for Benefits section */
+    padding: 15px;
+    border-left: 5px solid #ff8c00; /* Orange accent for energy */
+}
+
+#footwork {
+    background-color: #e6f0ff; /* Light blue for Footwork section */
+    padding: 15px;
+    border-left: 5px solid #1e90ff; /* Blue accent */
+}
+
+#safety-tips {
+    background-color: #fff0f0; /* Light pink for Safety Tips */
+    padding: 15px;
+    border-left: 5px solid #ff4500; /* Red accent for caution */
+}
+
+/* ------------------------------
+   Footer
+--------------------------------*/
+.page-footer {
+    background-color: #2e8b57; /* Match header */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.page-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   Flexbox for index.html sections
+--------------------------------*/
+.flex-container {
+    display: flex;          /* Turn container into Flexbox */
+    gap: 20px;              /* Space between sections */
+    flex-wrap: wrap;        /* Wrap sections on smaller screens */
+    justify-content: space-between;
+}
+
+.flex-container section {
+    flex: 1 1 45%;          /* Each section ~45% width */
+    box-sizing: border-box;  /* Include padding/borders in width */
+}
