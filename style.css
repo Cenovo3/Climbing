@@ -57,41 +57,41 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    border: 2px solid #2e8b57; /* Green border to match climbing theme */
+    border: 2px solid #2e8b57;
 }
 
 /* ------------------------------
    Unique Sections via ID
 --------------------------------*/
 #about-climbing {
-    background-color: #e6ffe6; /* Light green background for About */
+    background-color: #e6ffe6;
     padding: 15px;
     border-left: 5px solid #2e8b57;
 }
 
 #benefits {
-    background-color: #fff4e6; /* Light beige for Benefits section */
+    background-color: #fff4e6;
     padding: 15px;
-    border-left: 5px solid #ff8c00; /* Orange accent for energy */
+    border-left: 5px solid #ff8c00;
 }
 
 #footwork {
-    background-color: #e6f0ff; /* Light blue for Footwork section */
+    background-color: #e6f0ff;
     padding: 15px;
-    border-left: 5px solid #1e90ff; /* Blue accent */
+    border-left: 5px solid #1e90ff;
 }
 
 #safety-tips {
-    background-color: #fff0f0; /* Light pink for Safety Tips */
+    background-color: #fff0f0;
     padding: 15px;
-    border-left: 5px solid #ff4500; /* Red accent for caution */
+    border-left: 5px solid #ff4500;
 }
 
 /* ------------------------------
    Footer
 --------------------------------*/
 .page-footer {
-    background-color: #2e8b57; /* Match header */
+    background-color: #2e8b57;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -111,13 +111,55 @@ body {
    Flexbox for index.html sections
 --------------------------------*/
 .flex-container {
-    display: flex;          /* Turn container into Flexbox */
-    gap: 20px;              /* Space between sections */
-    flex-wrap: wrap;        /* Wrap sections on smaller screens */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .flex-container section {
-    flex: 1 1 45%;          /* Each section ~45% width */
-    box-sizing: border-box;  /* Include padding/borders in width */
+    flex: 1 1 45%;
+    box-sizing: border-box;
+}
+
+/* ------------------------------
+   Responsive Design (Media Query)
+--------------------------------*/
+@media (max-width: 768px) {
+
+    /* Stack sections vertically */
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container section {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    /* Adjust header size */
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    /* Adjust section titles */
+    .section-title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    /* Improve readability */
+    body {
+        font-size: 18px;
+    }
+
+    /* Stack navigation if present */
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 10px 0;
+    }
 }
