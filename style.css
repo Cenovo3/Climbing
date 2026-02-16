@@ -1,0 +1,165 @@
+/* ------------------------------
+   Body and General Styles
+--------------------------------*/
+body {
+    background-color: #f4f4f4; /* Light neutral background */
+    font-family: "Trebuchet MS", Arial, sans-serif; /* Clean, readable font */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   Page Header
+--------------------------------*/
+.page-header {
+    background-color: #2e8b57; /* Dark green */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+/* ------------------------------
+   Section Titles and Text
+--------------------------------*/
+.section-title {
+    color: #556b2f; /* Olive green */
+    font-size: 28px;
+    margin: 20px 0 10px 0;
+}
+
+.section-text {
+    color: #333;
+    margin: 10px 20px;
+}
+
+/* ------------------------------
+   Lists
+--------------------------------*/
+.list {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ------------------------------
+   Images
+--------------------------------*/
+.climbing-image {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #2e8b57;
+}
+
+/* ------------------------------
+   Unique Sections via ID
+--------------------------------*/
+#about-climbing {
+    background-color: #e6ffe6;
+    padding: 15px;
+    border-left: 5px solid #2e8b57;
+}
+
+#benefits {
+    background-color: #fff4e6;
+    padding: 15px;
+    border-left: 5px solid #ff8c00;
+}
+
+#footwork {
+    background-color: #e6f0ff;
+    padding: 15px;
+    border-left: 5px solid #1e90ff;
+}
+
+#safety-tips {
+    background-color: #fff0f0;
+    padding: 15px;
+    border-left: 5px solid #ff4500;
+}
+
+/* ------------------------------
+   Footer
+--------------------------------*/
+.page-footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.page-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   Flexbox for index.html sections
+--------------------------------*/
+.flex-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-container section {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+}
+
+/* ------------------------------
+   Responsive Design (Media Query)
+--------------------------------*/
+@media (max-width: 768px) {
+
+    /* Stack sections vertically */
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container section {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    /* Adjust header size */
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    /* Adjust section titles */
+    .section-title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    /* Improve readability */
+    body {
+        font-size: 18px;
+    }
+
+    /* Stack navigation if present */
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
