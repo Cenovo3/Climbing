@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Climbing - Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Page header -->
@@ -12,36 +16,42 @@
     <h1>Welcome to My Climbing Website</h1>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="page2.html">Learn more about outdoor climbing</a>
+  <!-- Navigation Buttons -->
+  <nav class="text-center mt-3">
+    <a href="index.html" class="btn btn-success m-2">Home</a>
+    <a href="page2.html" class="btn btn-primary m-2">Learn More</a>
   </nav>
 
-  <main>
-    <!-- Flex container for side-by-side sections -->
-    <div class="flex-container">
+  <main class="container mt-4">
 
-      <section id="about-climbing">
+    <div class="row">
+
+      <section id="about-climbing" class="col-md-6 p-3">
         <h2 class="section-title">About Climbing</h2>
+
         <p class="section-text">
-          Climbing is a fun and challenging sport that tests strength, endurance, and problem-solving skills.
+          Climbing is a fun and challenging sport that tests strength,
+          endurance, and problem-solving skills.
         </p>
+
         <p class="section-text">
-          Whether you prefer indoor gyms or outdoor cliffs, climbing has something for everyone.
+          Whether you prefer indoor gyms or outdoor cliffs,
+          climbing has something for everyone.
         </p>
       </section>
 
-      <section id="benefits">
+      <section id="benefits" class="col-md-6 p-3">
+
         <h2 class="section-title">Benefits of Climbing</h2>
+
         <ul class="list">
           <li>Builds strength and endurance</li>
           <li>Improves flexibility</li>
           <li>Enhances mental focus</li>
         </ul>
 
-        <!-- Proper heading nesting -->
         <h3 class="section-title">Basic Climbing Steps</h3>
+
         <ol class="list">
           <li>Choose the right climbing route</li>
           <li>Wear proper safety gear</li>
@@ -53,15 +63,19 @@
           src="images/climbing.jpg" 
           alt="Rock climber wearing a safety harness scaling a steep indoor climbing wall"
           class="climbing-image">
+
       </section>
 
     </div>
+
   </main>
 
   <!-- Footer -->
-  <footer class="page-footer">
+  <footer class="page-footer mt-4">
     <p>
-      <a href="page2.html">Explore outdoor climbing techniques and locations</a>
+      <a href="page2.html" class="btn btn-warning">
+        Explore Outdoor Climbing
+      </a>
     </p>
   </footer>
 
